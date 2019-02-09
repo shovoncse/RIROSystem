@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('main-content')
+    
     <div class="row">
         <div class="col-12">
             <div class="card-box">
@@ -37,30 +38,32 @@
             </div>
         </div>
     </div> <!-- end row -->
+    
+
 @endsection
 
 @section('table-plugins')
     <!-- Required datatable js -->
-    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src=" {{ asset('assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
     <!-- Buttons examples -->
-    <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
-    <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
-    <script src="assets/plugins/datatables/jszip.min.js"></script>
-    <script src="assets/plugins/datatables/pdfmake.min.js"></script>
-    <script src="assets/plugins/datatables/vfs_fonts.js"></script>
-    <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
-    <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src=" {{ asset('assets/plugins/datatables/dataTables.buttons.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/buttons.bootstrap4.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/jszip.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/pdfmake.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/vfs_fonts.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/buttons.html5.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/buttons.print.min.js')}}"></script>
 
     <!-- Key Tables -->
-    <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src=" {{ asset('assets/plugins/datatables/dataTables.keyTable.min.js')}}"></script>
 
     <!-- Responsive examples -->
-    <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
-    <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src=" {{ asset('assets/plugins/datatables/dataTables.responsive.min.js')}}"></script>
+    <script src=" {{ asset('assets/plugins/datatables/responsive.bootstrap4.min.js')}}"></script>
 
     <!-- Selection table -->
-    <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
+    <script src=" {{ asset('assets/plugins/datatables/dataTables.select.min.js')}}"></script>
 
 @endsection
 
@@ -102,11 +105,11 @@
 
 @section('table-css')
     <!-- DataTables -->
-    <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href=" {{ asset('assets/plugins/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href=" {{ asset('assets/plugins/datatables/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Responsive datatable examples -->
-    <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href=" {{ asset('assets/plugins/datatables/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- Multi Item Selection examples -->
-    <link href="assets/plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href=" {{ asset('assets/plugins/datatables/select.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection

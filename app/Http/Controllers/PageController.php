@@ -54,4 +54,16 @@ class PageController extends Controller
         return view('pages.inventory.hot-part-inventory')-> with($data);
 
     }
+    //ADD NEW PART PAGE
+    public function addNewPart(){
+        $data = [
+            'title'=>'Add New Part',
+            'from'=>[
+                    'fromtitle'=> 'Inventory',
+                    'thislink' => '#' 
+                ]
+        ];
+        return view('pages.inventory.addNewPart')-> with($data);
+
+    }
 }

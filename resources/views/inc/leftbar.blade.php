@@ -6,10 +6,10 @@
         <div class="topbar-left" style="background-color: #ffff5f;">
             <a href="/" class="logo">
                 <span>
-                    <img src="assets/images/logo.png" alt="logo">
+                    <img src="{{URL::to('assets/images/logo.png')}}" alt="logo">
                 </span>
                 <i>
-                    <img src="assets/images/logo_sm.png" alt="" height="28">
+                    <img src="{{URL::to('assets/images/logo_sm.png')}}" alt="" height="28">
                 </i>
             </a>
         </div>
@@ -17,7 +17,7 @@
         <!-- User box -->
         <div class="user-box">
             <div class="user-img">
-                <img src="assets/images/users/avatar-1.png" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                <img src="{{URL::to('assets/images/users/avatar-1.png')}}" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
             </div>
             <h5><a href="#">Irnadi Zen</a> </h5>
             <p class="text-muted">Administrator</p>
@@ -39,7 +39,7 @@
                 <li>
                     <a href="javascript: void(0);"><i class="fi-layers"></i> <span> Inventory </span> <span class="menu-arrow"></span></a>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li><a href="/part-management">Part Management</a></li>
+                        <li><a href="/parts">Part Management</a></li>
                         <li><a href="/hot-part-inventory">Hot Part Inventory</a></li>
                     </ul>
                 </li>

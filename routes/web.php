@@ -24,3 +24,9 @@ Route::get('/register', 'PageController@register');
 Route::get('/part-management', 'PageController@partManage');
 //HOT PART
 Route::get('/hot-part-inventory', 'PageController@hotPart');
+//ADD NEW PART
+Route::get('/addNewPart', 'PageController@addNewPart');
+
+
+//CRUD
+Route::resource('parts', 'PartManageController');
